@@ -29,7 +29,7 @@ export default class Hero extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.handleSubmit} action="">
+        <form className="mx-auto container flex items-center justify-center" onSubmit={this.handleSubmit} action="">
           <input required
             value={this.state.title}
             onChange={(e) => this.setState({ title: e.target.value })}
